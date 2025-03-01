@@ -6,11 +6,11 @@ export default function Hero() {
       <h1 className="text-4xl font-bold mb-4">
         Hello, I&apos;m
         <Image
-          src="/images/personal.jpeg"
+          src="/images/personal.jpg"
           alt="logo"
           width={100}
           height={100}
-          className="rounded-2xl inline mx-2 border-2 border-gray-300 grayscale"
+          className="rounded-2xl inline mx-2 border-2 border-gray-300"
         />
         Long Hoang!
       </h1>
