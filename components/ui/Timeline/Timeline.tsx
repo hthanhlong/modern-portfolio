@@ -12,11 +12,14 @@ export default function Timeline() {
               item.id === 1 && "dark:!bg-gray-500"
             )}
           ></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-800">
+          <time className="mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-800">
             {item.title}
           </time>
-          <p className="mb-4 text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
             {item.description}
+          </p>
+          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+            {item.location}
           </p>
         </li>
       ))}

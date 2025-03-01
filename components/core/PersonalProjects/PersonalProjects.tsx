@@ -61,7 +61,7 @@ export default function PersonalProjects() {
               height={200}
               className="w-full h-full object-cover"
             />
-            <h1 className="text-xs">{project.title}</h1>
+            <h1 className="text-sm lg:text-xs">{project.title}</h1>
             {project.links && project.links.length > 0 ? (
               <div className="flex gap-2">
                 {project.links.map((link) => (
@@ -70,7 +70,7 @@ export default function PersonalProjects() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full text-[8px] p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
+                    className="w-full lg:text-[8px] text-sm p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
                   >
                     {link.title}
                   </Link>
@@ -81,7 +81,7 @@ export default function PersonalProjects() {
                 href={project.github || ""}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-[8px] p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
+                className="w-full lg:text-[8px] text-sm p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
               >
                 Frontend
               </Link>

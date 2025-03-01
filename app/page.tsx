@@ -7,6 +7,7 @@ import {
   PersonalProjects,
   OpenToWork,
   Wrapper,
+  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <PersonalProjects />
         </div>
         <Map />
+        <Footer />
       </Wrapper>
     </div>
   );

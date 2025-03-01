@@ -10,6 +10,7 @@ import DotGreenIcon from "./icons/DotGreenIcon";
 import CustomCard from "./ui/CustomCard/CustomCard";
 import MusicPlaylist from "./core/MusicPlaylist/MusicPlaylist";
 import WhatIRead from "./core/WhatIRead/WhatIRead";
+import Footer from "./core/Footer/Footer";
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   CustomCard,
   MusicPlaylist,
   WhatIRead,
+  Footer,
 };
