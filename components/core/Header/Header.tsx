@@ -8,13 +8,13 @@ export default function Header() {
     <div className="flex items-center justify-between mb-10">
       <h1 className="text-xs lg:text-base underline">hthanhlong97@gmail.com</h1>
       <div className="flex items-center gap-2">
-        <Image
+        {/* <Image
           className="cursor-pointer hover:scale-110 transition-all duration-300"
           src="/download.svg"
           alt="logo"
           width={24}
           height={24}
-        />
+        /> */}
         <Link
           href={linkedinUrl}
           target="_blank"

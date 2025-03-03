@@ -3,23 +3,38 @@ import { Card } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const projects = [
+interface Project {
+  id: number;
+  title: string;
+  image: string;
+  live: string;
+  github?: string;
+  links?: {
+    title: string;
+    url: string;
+  }[];
+}
+
+const projects: Project[] = [
   {
     id: 1,
     title: "Code Editor",
     image: "/images/react.jpeg",
+    live: "https://react-code-editor-long.vercel.app/",
     github: "https://github.com/hthanhlong/react_code_editor",
   },
   {
     id: 2,
     title: "Nike UI",
     image: "/images/nike.jpeg",
+    live: "https://nike-clone-long.vercel.app/",
     github: "https://github.com/hthanhlong/nike-clone",
   },
   {
     id: 3,
     title: "Chat App",
     image: "/images/chat-app.jpeg",
+    live: "https://chat-page-long.vercel.app/",
     links: [
       {
         title: "Frontend",
@@ -32,9 +47,10 @@ const projects = [
     ],
   },
   {
+    id: 4,
     title: "E-commerce",
     image: "/images/e-commerce.jpeg",
-    github: "https://github.com/your-repo/e-commerce",
+    live: "https://e-commerce-long.vercel.app/",
     links: [
       {
         title: "Frontend",
@@ -51,16 +67,25 @@ const projects = [
 export default function PersonalProjects() {
   return (
     <CustomCard title="Personal Projects" className="w-full">
-      <div className="flex flex-col gap-2 lg:flex-row">
+      <div className="flex flex-col gap-4 lg:flex-row">
         {projects.map((project) => (
           <Card className="w-full text-center p-2 border-0" key={project.title}>
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={200}
-              height={200}
-              className="w-full h-full object-cover"
-            />
+            <div className="relative group">
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={200}
+                height={200}
+                className="w-full h-full object-cover hover:opacity-80 transition-all duration-300"
+              />
+              <Link
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-gray-700 font-bold bg-white px-2 py-1 rounded-lg text-xs hidden group-hover:block hover:opacity-80 transition-all duration-300"
+                href={project.live || ""}
+                target="_blank"
+              >
+                Live
+              </Link>
+            </div>
             <h1 className="text-sm lg:text-xs">{project.title}</h1>
             {project.links && project.links.length > 0 ? (
               <div className="flex gap-2">
