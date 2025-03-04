@@ -67,7 +67,7 @@ const projects: Project[] = [
 export default function PersonalProjects() {
   return (
     <CustomCard title="Personal Projects" className="w-full">
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         {projects.map((project) => (
           <Card className="w-full text-center p-2 border-0" key={project.title}>
             <div className="relative group">
@@ -95,7 +95,7 @@ export default function PersonalProjects() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full lg:text-[8px] text-sm p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
+                    className="w-full lg:text-[10px] text-xs p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
                   >
                     {link.title}
                   </Link>
@@ -106,7 +106,7 @@ export default function PersonalProjects() {
                 href={project.github || ""}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:text-[8px] text-sm p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
+                className="w-full lg:text-[10px] text-xs p-1 rounded-xl bg-blue-200 text-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-300"
               >
                 Frontend
               </Link>
