@@ -14,7 +14,7 @@ export default function Footer() {
         <Image src="/aws.svg" alt="flag" width={24} height={24} />
         <Image src="/postgresql.svg" alt="flag" width={24} height={24} />
       </div>
-      <p className="text-sm">
+      <p className="text-xs sm:text-sm">
         * I am eligible to work without the need for sponsorship.
       </p>
     </div>
