@@ -20,14 +20,14 @@ const projects: Project[] = [
     id: 1,
     title: "Code Editor",
     image: "/images/react.jpeg",
-    live: "https://react-code-editor-long.vercel.app/",
+    live: "https://codepin.hthanhlong97.ca/",
     github: "https://github.com/hthanhlong/react_code_editor",
   },
   {
     id: 2,
     title: "Nike UI",
     image: "/images/nike.jpeg",
-    live: "https://nike-clone-long.vercel.app/",
+    live: "https://clone.hthanhlong97.ca/",
     github: "https://github.com/hthanhlong/nike-clone",
   },
   {
