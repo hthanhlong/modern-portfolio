@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Long Hoang",
-  metadataBase: new URL("https://www.hthanhlong97.ca"),
+  metadataBase: new URL("https://hthanhlong97.ca"),
   description: "Software Engineer - Open to work",
   icons: {
     icon: "/favicon.ico",
