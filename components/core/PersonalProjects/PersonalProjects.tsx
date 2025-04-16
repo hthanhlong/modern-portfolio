@@ -59,13 +59,15 @@ export default function PersonalProjects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         {projects.map((project) => (
           <Card className="w-full text-center p-2 border-0" key={project.title}>
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={200}
-              height={200}
-              className="w-full h-full object-cover hover:opacity-80 transition-all duration-300 cursor-pointer"
-            />
+            <Link href={project.live} target="_blank">
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={200}
+                height={200}
+                className="w-full h-full object-cover hover:opacity-80 transition-all duration-300 cursor-pointer"
+              />
+            </Link>
             <h1 className="text-sm lg:text-xs">{project.title}</h1>
             {project.links && project.links.length > 0 && (
               <div className="flex gap-2 justify-center items-center bg-gray-100 py-1 rounded-lg">

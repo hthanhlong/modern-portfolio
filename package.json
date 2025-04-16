@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm run check-ts && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-ts": "tsc --noEmit"
   },
   "dependencies": {
     "clsx": "^2.1.1",
