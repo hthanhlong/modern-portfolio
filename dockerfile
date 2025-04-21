@@ -1,11 +1,11 @@
 # Use official Node.js 18.18 or later image as the base image
-FROM node:18.18-alpine
+FROM node:22-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Copy package.json and package-lock.json (or yarn.lock) to install dependencies first
-COPY package*.json ./
+COPY package.json ./
 
 # Install dependencies
 RUN npm install --legacy-peer-deps
